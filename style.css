@@ -186,7 +186,12 @@ margin: 1rem auto;
 }
 
 
-
+@media (max-width: 768px) {
+  .terminalname{
+    width: 300px;
+    
+  }
+}
 
 
 
