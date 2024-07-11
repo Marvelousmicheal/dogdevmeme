@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Iceberg", sans-serif;
+}
+
 body {
-  background-color: #2b47d7;
+  background-color:black;
 
   margin: 0;
   padding: 0;
 }
+.title{
+  padding-top: 1rem;
+ text-align: center;
+  color: #c9c6c6;
+}
 section {
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
  
   font-family: monospace;
   display: flex;
@@ -29,12 +42,12 @@ header{
     gap: 8px;
     background: #fff;
     height: 40px;
-    width: 40.2%;
+    width: 90%;
     padding-left: 20px;
-   
+   justify-content: space-between;
     border-radius:10px 10px 0 0 ;
     padding-right: 20px;
-    max-width: 800px;
+    max-width: 95%;
 }
 header div{
    
@@ -42,24 +55,34 @@ header div{
     height: 20px;
     border-radius: 100%;
 }
+.terminalname{
+  width: 200px;
+  color: #c9c6c6;
+}
+.dot{
+  display: flex;
+  width:80px;
+  justify-content: space-between;
+}
 .red{
-    background-color: red;
+    background-color: rgb(90, 6, 6);
 }
 .yellow{
-    background-color: yellow;
+    background-color: rgb(103, 103, 4);
 
 }
 .green{
-    background-color: green;
+    background-color: rgb(4, 82, 4);
 }
 .terminalheader{
-  background-color: white;
+  background-color: rgb(4, 34, 2);
 }
 #terminal {
-  width: 40%;
-  max-width: 800px;
- height: 300px;
-  background-color: #222;
+  width: 90%;
+  max-width: 95%;
+ height: 550px;
+  background-color: rgb(5, 135, 5);
+  background-image: url("./scanlines.png");
   padding: 20px;
   overflow-y: auto;
 
@@ -81,6 +104,7 @@ header div{
   position: relative;
   padding: 15px 35px;
   border-radius: 2px;
+  box-shadow: 0 0 10px #00FF00;
   color: white;
   display: flex;
   justify-content: center;
@@ -88,16 +112,30 @@ header div{
   
 
 }
-.darkblue{
-  background-color: rgb(63, 40, 133);
+ 
+.btn1 {
+  background-color: #2F4F4F; 
 }
-.black{
-  background-color: black;
+
+.btn2 {
+  background-color: #556B2F; 
 }
-.telegramblue{
-  background-color: rgb(34, 158, 217);
+
+.btn3 {
+  background-color: #008B8B; 
 }
-.socialbox::after{
+
+.btn4 {
+  background-color: #8B008B; 
+}
+
+.btn5 {
+  background-color: #B8860B; 
+} 
+
+
+
+/* .socialbox::after{
   content: "";
   top: 5px;
   right: 5px;
@@ -110,12 +148,16 @@ header div{
   border-image: initial;
   white-space: nowrap;
   border-radius: 2px;
-}
+} */
 .socialbox-container{
   display: flex;
-  flex-direction: column;
+margin: 1rem auto;
   gap: 3rem;
   margin-bottom: 2rem;
+  width: 95%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   
 }
 .logomeme img{
@@ -125,21 +167,21 @@ header div{
 }
 .logomeme img:nth-child(1){
   top: 50%;
-  right: -300px;
-  transform: translateY(-50%) rotate(-45deg);
+  right: -120px;
+  transform: translateY(-50%) rotate(0deg);
   animation: 15s ease 0s infinite normal none running slideAnimation;
 }
 
-.logomeme img:nth-child(2){
+/* .logomeme img:nth-child(2){
   bottom: 300px;
   left: 50%;
   transform: translate(-50%);
   animation: 15s ease 0s infinite normal none running slideAnimation2;
-}
-.logomeme img:nth-child(3){
+} */
+.logomeme img:nth-child(2){
   left: -300px;
   top: 50%;
-    transform: translateY(-50%) rotate(45deg) scaleX(-1);
+    transform: translateY(-50%) rotate(0deg) scaleX(-1);
   animation: 15s ease 0s infinite normal none running slideAnimation3;
 }
 
@@ -155,13 +197,13 @@ header div{
       right: 0;
   }
   50% {
-      right: -300px;
+      right: -230px;
   }
   60% {
       right: -100px;
   }
   65% {
-      right: -300px;
+      right: -230px;
   }
   100% {
       right: 0;
@@ -169,7 +211,7 @@ header div{
 }
 
 
-@keyframes slideAnimation2 {
+/* @keyframes slideAnimation2 {
   0% {
     bottom: 0;
   }
@@ -185,20 +227,20 @@ header div{
   100% {
     bottom: 0;
   }
-}
+} */
 
 @keyframes slideAnimation3 {
   0% {
     left: 0;
   }
   70% {
-    left: -300px;
+    left: -230px;
   }
   80% {
     left: -100px;
   }
   85% {
-    left: -300px;
+    left: -230px;
   }
   100% {
     left: 0;

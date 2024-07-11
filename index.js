@@ -11,18 +11,26 @@
    
    
    $(document).ready(function(){
-            var commands = [
-                {type: 'cmd', text: '$ npm install <del>CatDev</del>CatDev'},
-                {type: 'output', text: '+CatDev@0.10.2 installed'},
-                {type: 'cmd', text: '$ cd CatDev'},
-                {type: 'cmd', text: '$ npm run Gas Pump'},
-                {type: 'output', text: '\nPrelaunch is OVER\n----------------------------------------------\nPrelaunch: Stats # ./CatDev/prelaunch.stats\n\n  Scenario: Stupid cat lands on the moon\n     0% our dev draw\n    10% stupid cat meme ever\n    25% but we love him\n    50% next moonshot\n   100% meme worthy\n\n ---------- -------------- --------- --------- -----\n  MARKET CAP   TOTAL SUPPLY   TAX BUY   TAX SELL   LP\n ---------- -------------- --------- --------- -----\n  10B         1M            0%       0%        BURN'},
-                {type: 'cmd', text: '$ npm run buy'},
-                {type: 'output', text: 'Buy completed'},
-                {type: 'cmd', text: '$ npm run launch'},
-                {type: 'output', text: 'CEX listing confirmed. DEX trading is LIVE.'},
-                {type: 'cmd', text: '$'}
-            ];
+    var commands = [
+        { type: 'cmd', text: '$ npm install <del>DogDev</del>DogDev' },
+        { type: 'output', text: '+DogDev@1.0.0 installed' },
+        { type: 'cmd', text: '$ cd DogDev' },
+        { type: 'cmd', text: '$ npm run Bark' },
+        { type: 'output', text: '\nInitialization complete\n----------------------------------------------\nDogDev: Stats # ./DogDev/bark.stats\n\n  Scenario: Doggo conquers the park\n     0% chasing tail\n    20% barking at squirrels\n    40% fetching stick\n    60% digging holes\n    80% wagging tail\n   100% good boy\n\n ---------- -------------- --------- --------- -----\n  MARKET CAP   TOTAL SUPPLY   TAX BUY   TAX SELL   LP\n ---------- -------------- --------- --------- -----\n  5B          500K           0%       0%        SNACK' },
+        { type: 'cmd', text: '$ npm run Fetch' },
+        { type: 'output', text: 'Fetch completed' },
+        { type: 'cmd', text: '$ npm run launch' },
+        { type: 'output', text: 'CEX listing confirmed. DEX trading is LIVE.' },
+        { type: 'cmd', text: '$ npm run Walk' },
+        { type: 'output', text: 'Walk initiated. Remember to bring bags!' },
+        { type: 'cmd', text: '$ npm run Sit' },
+        { type: 'output', text: 'Doggo is sitting. Awaiting further commands.' },
+        { type: 'cmd', text: '$ npm run Stay' },
+        { type: 'output', text: 'Doggo is staying. Good boy!' },
+        { type: 'cmd', text: '$ npm run Play' },
+        { type: 'output', text: 'Playing initiated. Doggo is happy!' },
+        { type: 'cmd', text: '$' }
+      ];
 
             function displayCommands(index) {
                 if (index >= commands.length) return;
