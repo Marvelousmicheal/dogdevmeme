@@ -12,11 +12,11 @@
    
    $(document).ready(function(){
     var commands = [
-        { type: 'cmd', text: '$ npm install <del>DogDev</del>DogDev' },
-        { type: 'output', text: '+DogDev@1.0.0 installed' },
-        { type: 'cmd', text: '$ cd DogDev' },
+        { type: 'cmd', text: '$ npm install <del>$DAWG</del>$DAWG' },
+        { type: 'output', text: '+$DAWG@1.0.0 installed' },
+        { type: 'cmd', text: '$ cd $DAWG' },
         { type: 'cmd', text: '$ npm run Bark' },
-        { type: 'output', text: '\nInitialization complete\n----------------------------------------------\nDogDev: Stats # ./DogDev/bark.stats\n\n  Scenario: Doggo conquers the park\n     0% chasing tail\n    20% barking at squirrels\n    40% fetching stick\n    60% digging holes\n    80% wagging tail\n   100% good boy\n\n ---------- -------------- --------- --------- -----\n  MARKET CAP   TOTAL SUPPLY   TAX BUY   TAX SELL   LP\n ---------- -------------- --------- --------- -----\n  5B          500K           0%       0%        SNACK' },
+        { type: 'output', text: '\nInitialization complete\n----------------------------------------------\n$DAWG: Stats # ./$DAWG/bark.stats\n\n  Scenario: Doggo conquers the park\n     0% chasing tail\n    20% barking at squirrels\n    40% fetching stick\n    60% digging holes\n    80% wagging tail\n   100% good boy\n\n ---------- -------------- --------- --------- -----\n  MARKET CAP   TOTAL SUPPLY   TAX BUY   TAX SELL   LP\n ---------- -------------- --------- --------- -----\n  5B          500K           0%       0%        SNACK' },
         { type: 'cmd', text: '$ npm run Fetch' },
         { type: 'output', text: 'Fetch completed' },
         { type: 'cmd', text: '$ npm run launch' },
