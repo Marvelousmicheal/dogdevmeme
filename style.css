@@ -67,7 +67,7 @@ header div{
   justify-content: space-between;
 }
 .red{
-    background-color: rgb(90, 6, 6);
+    background-color: rgb(6, 10, 90);
 }
 .yellow{
     background-color: rgb(103, 103, 4);
@@ -77,13 +77,13 @@ header div{
     background-color: rgb(4, 82, 4);
 }
 .terminalheader{
-  background-color: rgb(4, 34, 2);
+  background-color: rgb(86, 7, 2);
 }
 #terminal {
   width: 90%;
   max-width: 95%;
  height: 550px;
-  background-color: rgb(5, 135, 5);
+  background-color: rgb(189, 6, 6);
   background-image: url("./scanlines.png");
   padding: 20px;
   overflow-y: auto;
@@ -106,7 +106,7 @@ header div{
   position: relative;
   padding: 15px 35px;
   border-radius: 2px;
-  box-shadow: 0 0 10px #00FF00;
+
   color: white;
   display: flex;
   justify-content: center;
